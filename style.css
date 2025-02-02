@@ -1,0 +1,130 @@
+
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Red Hat Display', sans-serif;
+            background-color: hsl(225, 100%, 94%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('pattern-background-desktop.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .container {
+            max-width: 450px;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+            margin: 25px;
+        }
+
+        .hero {
+            height: 220px;
+            background: url('illustration-hero.svg') no-repeat center/cover;
+        }
+
+        .content {
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: hsl(223, 47%, 23%);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .description {
+            color: hsl(224, 23%, 55%);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .plan {
+            display: flex;
+            align-items: center;
+            background: hsl(225, 100%, 98%);
+            padding: 1.2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .plan-icon {
+            margin-right: 1.2rem;
+        }
+
+        .plan-details {
+            flex-grow: 1;
+            text-align: left;
+        }
+
+        .plan-type {
+            color: hsl(223, 47%, 23%);
+            font-weight: 900;
+        }
+
+        .plan-price {
+            color: hsl(224, 23%, 55%);
+        }
+
+        .change-link {
+            color: hsl(245, 75%, 52%);
+            font-weight: 700;
+            transition: opacity 0.3s;
+        }
+
+        .change-link:hover {
+            opacity: 0.7;
+            text-decoration: none;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            border: none;
+            border-radius: 12px;
+            font-weight: 900;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .proceed-btn {
+            background: hsl(245, 75%, 52%);
+            color: white;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 15px 20px rgba(56, 41, 224, 0.2);
+        }
+
+        .proceed-btn:hover {
+            opacity: 0.7;
+        }
+
+        .cancel-btn {
+            background: none;
+            color: hsl(224, 23%, 55%);
+        }
+
+        .cancel-btn:hover {
+            color: hsl(223, 47%, 23%);
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 1.5rem;
+            }
+            
+            .plan {
+                padding: 1rem;
+            }
+        }
+    
